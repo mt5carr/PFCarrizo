@@ -1,0 +1,45 @@
+// FUENTES ----
+$fuente: 'Roboto', sans-serif;
+
+// COLORES ----
+// - Paleta colores
+$base-oscuro: #2b2b2b;
+$base-claro: #e0e0e0;
+$enfacis: #2D87F0;
+$contraste: #ffffff;
+
+// - Header
+$fondoHeader: $contraste;
+$fondoHeaderMobile: $base-oscuro;
+
+// - Nav
+$fondoNav: $base-oscuro;
+$textoNav: $contraste;
+
+// - Main
+$fondoMain: $base-claro;
+$fondoTarjetero: $base-claro;
+$fondoTarjeta: $contraste;
+$fondoIconTarjeta: $base-claro;
+$icono: $base-oscuro;
+
+//      -- Proyectos
+$fondoObra:url('../media/avisaroback.jpg');
+$letraObra: $contraste;
+$fondoTablaObra: $contraste;
+$fordeFilaTabla: $base-oscuro;
+
+//      -- Documentos
+$fondoTarjetaDocumento: $base-oscuro;
+$fondoDocumento:url('../media/docs.jpg');
+$fondoTablaRevisiones:$contraste;
+
+// - Footer
+$fondoFooter: $contraste;
+
+
+// TAMAÑO CONTENEDORES ----
+$altoHeader: 50px;
+$altoFooter: 30px;
+
+$paddingHeader: 0px;
