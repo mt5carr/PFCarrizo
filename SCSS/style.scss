@@ -27,6 +27,9 @@ body{
         "main"
         "footer";
     }
+    
+    background-image: url(../media/Abs\ \(8\).jpg);
+    background-size: 100vw;
 }
 
 header{
@@ -35,30 +38,35 @@ header{
     grid-area: header;
     height: $altoHeader;
     background-color: $fondoHeader;
+    backdrop-filter: blur(5px);
+    
+    
 }
 
 nav{
     grid-area: nav;
     height: 100vh;
-    background-color: $fondoNav;
-    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(80, 80, 80));
+    background-image: $fondoNav;  
+    backdrop-filter: blur(5px);
 }
 
 main{
     grid-area: main;
-    background-color: $fondoMain;
+    // background-color: $fondoMain;
     height: calc(100vh - $altoHeader - $altoFooter - 2 * $paddingHeader);
-    overflow: scroll;
+    overflow: scroll;    
 }
 
 footer{
     display: flex;
     grid-area: footer;
     height: $altoFooter;
-    background-color: $fondoFooter;
+    // background-color: $fondoFooter;
 }
 
 @import 'header';
 @import 'nav';
 @import 'main';
 @import 'footer';
+
+

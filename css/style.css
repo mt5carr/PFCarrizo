@@ -8,6 +8,8 @@ body {
   padding: 0;
   /* fin reseteo */
   display: grid;
+  background-image: url(../media/Abs\ \(8\).jpg);
+  background-size: 100vw;
 }
 @media (min-width: 860px) {
   body {
@@ -27,19 +29,19 @@ header {
   justify-content: space-between;
   grid-area: header;
   height: 50px;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.6352941176);
+  backdrop-filter: blur(5px);
 }
 
 nav {
   grid-area: nav;
   height: 100vh;
-  background-color: #2b2b2b;
-  background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(80, 80, 80));
+  background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.068));
+  backdrop-filter: blur(5px);
 }
 
 main {
   grid-area: main;
-  background-color: #e0e0e0;
   height: calc(100vh - 50px - 30px - 0px);
   overflow: scroll;
 }
@@ -48,7 +50,6 @@ footer {
   display: flex;
   grid-area: footer;
   height: 30px;
-  background-color: #ffffff;
 }
 
 header {
@@ -164,7 +165,6 @@ nav .nav__botones .navDesktop .nav__subitems {
 .carousel-item {
   padding: 20px;
 }
-
 .carousel-item img {
   height: 15em;
   padding: 0;
@@ -176,7 +176,6 @@ nav .nav__botones .navDesktop .nav__subitems {
 .tarjetero {
   display: flex;
   flex-wrap: wrap;
-  background-color: #e0e0e0;
   overflow: hidden;
 }
 @media (min-width: 860px) {
@@ -200,6 +199,9 @@ nav .nav__botones .navDesktop .nav__subitems {
   margin: 1em;
   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
   animation: tarjetaIntro 2s;
+}
+.tarjetero .tarjetahover {
+  transform: translateY(100px);
 }
 .tarjetero .tarjeta .encabezado {
   padding: 0 0 0.5em 0;
@@ -315,7 +317,7 @@ nav .nav__botones .navDesktop .nav__subitems {
 @keyframes tarjetaIntro {
   0% {
     transform: rotateX(90deg);
-    color: #e0e0e0;
+    color: transparent;
   }
 }
 @keyframes hoverBoton {

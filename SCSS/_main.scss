@@ -1,15 +1,6 @@
 @import 'base/variables';
+@import 'base/mixins';
 
-@mixin tarjetaTip{
-    width: 25em;
-    height: 15em;
-    padding: 2em;
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
-    margin: 1em;
-    position: relative;
-    overflow: hidden;
-}
 
 
 .avisador h2{
@@ -19,13 +10,13 @@
 
 .carousel-item{
     padding: 20px;
-}
 
-.carousel-item img{
-    height: 15em;
-    padding: 0;
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);   
+    img{
+        height: 15em;
+        padding: 0;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);   
+    }
 }
 
 
@@ -34,7 +25,7 @@
 .tarjetero{
     display: flex;
     flex-wrap: wrap;
-    background-color: $fondoTarjetero;
+    // background-color: $fondoTarjetero;
     overflow: hidden;
     @media (min-width: 860px) {
         justify-content: start;
@@ -57,6 +48,10 @@
         margin: 1em;
         box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
         animation: tarjetaIntro 2s;
+
+        &hover{
+            transform: translateY(100px)
+        }
 
         .encabezado{    
             padding: 0 0 0.5em 0;
@@ -194,7 +189,7 @@
 @keyframes tarjetaIntro{
     0%{
         transform: rotateX(90deg);
-        color: $base-claro;
+        color: transparent;
     }
 }
 
