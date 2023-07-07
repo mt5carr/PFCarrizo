@@ -16,9 +16,31 @@
     <meta name="keywords"  content="Gestión, Proyectos, Ingeniería, SiCI, Detalles">
 </head>
 <body>
+
+    <!-- <div class="pelota">
+        1
+    </div> -->
+
     <header>        
 
         <div class="header__logo">
+            <div class="navMobile">
+                <button class="btn btn-secondary hamburguesa" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"><li><i class="fa-solid fa-user nav__icon"></i>mcarrizo</a></li>
+                    <li><a class="dropdown-item" href="#"><li><i class="fa-solid fa-bell nav__icon"></i>Notificaciones</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="#"><li><i class="fa-solid fa-table-cells-large nav__icon"></i>Inicio</a></li>
+                    <li><a class="dropdown-item" href="pages/proyecto.html"><li><i class="fa-solid fa-folder nav__icon"></i>Proyectos</a></li>
+                    <li><a class="dropdown-item" href="#"><li><i class="fa-regular fa-file nav__icon"></i>Repositorio</a></li>
+                    <li><a class="dropdown-item" href="#"><li><i class="fa-solid fa-comments nav__icon"></i>Mensajes</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="#"><li><i class="fa-solid fa-chart-column nav__icon"></i>Administrador</a></li>
+                    <li><a class="dropdown-item" href="#"><li><i class="fa-solid fa-file-invoice nav__icon"></i>Contabilidad</a></li>
+                </ul>
+            </div>             
             <a href="index.html"><img src="media/Logo.svg" alt="Logo Plataforma" class="header__img"></a>
             <div class="navMobile">
                 <button class="btn btn-secondary hamburguesa" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -39,16 +61,24 @@
             </div>             
         </div>
 
-        <div class="header_barra">
+        <div class="header__barra">
             <div class="header__saludo" >
                 <h1>Bienvenido,   Matias Carrizo </h1>
             </div>
 
-            <div class="header__usuario">                       
-                <ul>
-                    <li><i class="fa-solid fa-bell"></i></li>
-                    <li>mcarrizo  <i class="fa-solid fa-angle-down"></i></li>
+            <div class="header__usuario">   
+                <button class="btn btn-primary usuario" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-user nav__icon"></i>mcarrizo
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"><li><i class="fa-solid fa-user nav__icon"></i>Editar datos</a></li>
+                    <li><a class="dropdown-item" href="#"><li><i class="fa-solid fa-right-from-bracket"></i>Cerrar sesión</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="#"><li><i class="fa-regular fa-circle-question"></i>Ayuda</a></li>
+                    <li><a class="dropdown-item" href="#"><li><i class="fa-solid fa-triangle-exclamation"></i>Informar un problema</a></li>
+          
                 </ul>
+                      
             </div>  
         </div>        
     </header>
@@ -125,93 +155,137 @@
         </div>
 
         <div class="tarjetero">        
-            <div class="tarjeta tarjeta--ejec">
-                <a href="pages/documento.html"> 
-                    <div class="encabezado">
-                        <div class="icono">
-                            <img src="media/PecomShell.svg" alt="" >
-                        </div>
-                        <b> I-0016-32-CE-MC-01</b>
-                        <small>Vence: 16/05/2023 (10 días) </small>
-                    </div>                    
-                    <p>Memoria de cálculo - Estructura metálica nuevo depósito</p>
-                </a>
-                <h6 class="ejecucion">Ejecución</h6>
-                <div class="botones">
-                    <a href="" title="Asignar HH"><i class="fa-solid fa-circle-plus"></i></a>
-                    <a href="" title="Entregar Tarea"><i class="fa-solid fa-circle-check"></i></a>
-                </div>  
-            </div>           
 
             <div class="tarjeta tarjeta--ejec">
-                <a href="pages/documento.html">
-                    <div class="encabezado">
-                        <div class="icono">
-                            <img src="media/PecomShell.svg" alt="" >
+                <div class="tarjeta-flip">
+                    <div class="tarjeta-front">
+                        <div class="encabezado">
+                            <div class="icono">
+                                <!-- <img src="media/PecomShell.svg" alt="" > -->
+                                <div class="simbolo">🔥</div>
+                            </div>
+                            <h5>ISK-0016-35-23-CE-MC-04</h5>
+                            <small>Vence: 09/07/2023 (2 días) </small>
                         </div>
-                        <b> I-0016-32-CE-MC-01</b>
-                        <small>Vence: 16/05/2023 (10 días) </small>
+                        <p>Memoria de cálculo - Fundación para antorcha de 17m de alto con base central y tres muertos de anclaje.</p>
+                        <h6 class="ejecucion">Ejecución</h6>
                     </div>
-                    <p>Memoria de cálculo - Fundación Estructura metálica nuevo depósito</p>
-                </a>
-                <h6 class="ejecucion">Ejecución</h6>
-                <div class="botones">
-                    <a href="" title="Asignar HH"><i class="fa-solid fa-circle-plus"></i></a>
-                    <a href="" title="Entregar Tarea"><i class="fa-solid fa-circle-check"></i></a>
-                </div>  
-            </div>    
 
-            <div class="tarjeta tarjeta--sc">
-                <a href="pages/documento.html">
-                    <div class="encabezado">
-                        <div class="icono">
-                            <img src="media/PecomShell.svg" alt="" >
-                        </div>
-                        <b> I-0016-32-CE-MC-01</b>
-                        <small>Vence: 16/05/2023 (10 días) </small>
+                    <div class="tarjeta-back">
+                        <UL>
+                            
+                            <li><b>N° INK:</b> ISK-0016-35-23-CE-MC-04-A1</li>
+                            <li><b>N° PECOM:</b> AH65-00-H-MC-0022-1</li>
+                            <li><b>N° YPF:</b> LajE-BATLAJE1001-VCD20013-C-MC-031019-E1</li>
+                            <li><b>Descripción:</b> MEMORIA DE CALCULO - FUNDACION SISTEMA DE VENTEO ANTORCHA L-603</li>
+                        </UL>
+                        <a href="pages/documento_1.html" title="Ver detalles del documento" class="botonDetalles">Ver detalles</a>
+                        <div class="botones">                           
+                            <a href="" title="Asignar HH"><i class="fa-solid fa-circle-plus"></i></a>
+                            <a href="" title="Entregar Tarea"><i class="fa-solid fa-circle-check"></i></a>
+                        </div>  
                     </div>
-                    <p>Memoria de cálculo - Fundación Estructura metálica nuevo depósito</p>
-                </a>
-                <h6 class="sinComenzar">Sin comenzar</h6>
-                <a href="" title="Comenzar Tarea" class="botonIniciar"><i class="fa-solid fa-circle-play"></i></a>
+                </div>
             </div>
 
-            <div class="tarjeta tarjeta--sc">
-                <a href="pages/documento.html">
-                    <div class="encabezado">
-                        <div class="icono">
-                            <img src="media/PecomShell.svg" alt="" >
+
+            <div class="tarjeta tarjeta--ejec">
+                <div class="tarjeta-flip">
+                    <div class="tarjeta-front">
+                        <div class="encabezado">
+                            <div class="icono">
+                                <!-- <img src="media/PecomShell.svg" alt="" > -->
+                                <div class="simbolo">⚠</div>
+                            </div>
+                            <h5>ISK-0016-35-23-CE-PE-04</h5>
+                            <small>Vence: 11/07/2023 (4 días) </small>
                         </div>
-                        <b> I-0016-32-CE-MC-01</b>
-                        <small>Vence: 16/05/2023 (10 días) </small>
+                        <p>Plano fundación para antorcha de 17m de alto con base central y tres muertos de anclaje.</p>
+                        <h6 class="ejecucion">Ejecución</h6>
                     </div>
-                    <p>Memoria de cálculo - Fundación Estructura metálica nuevo depósito</p>
-                </a>
-                <h6 class="sinComenzar">Sin comenzar</h6>
-                <a href="" title="Comenzar Tarea" class="botonIniciar"><i class="fa-solid fa-circle-play"></i></a>
+
+                    <div class="tarjeta-back">
+                        <UL>
+                            <li><b>N° INK:</b> ISK-0016-35-23-CE-PE-04-A1</li>
+                            <li><b>N° PECOM:</b> AH65-00-H-PL-0021-1</li>
+                            <li><b>N° YPF:</b> LajE-BATLAJE1001-VCD20013-C-PL-031021-E1</li>
+                            <li><b>Descripción:</b> PLANO FUNDACION SISTEMA DE VENTEO ANTORCHA L-603</li>
+                        </UL>
+                        <a href="pages/documento_2.html" title="Ver detalles del documento" class="botonDetalles">Ver detalles</a>
+                        <div class="botones">                           
+                            <a href="" title="Asignar HH"><i class="fa-solid fa-circle-plus"></i></a>
+                            <a href="" title="Entregar Tarea"><i class="fa-solid fa-circle-check"></i></a>
+                        </div>  
+                    </div>
+                </div>
             </div>
 
-            <div class="tarjeta tarjeta--sc">
-                <a href="pages/documento.html">
-                    <div class="encabezado">
-                        <div class="icono">
-                            <img src="media/PecomShell.svg" alt="" >
+            <div class="tarjeta tarjeta--ejec">
+                <div class="tarjeta-flip">
+                    <div class="tarjeta-front">
+                        <div class="encabezado">
+                            <div class="icono">
+                                <!-- <img src="media/PecomShell.svg" alt="" > -->
+                                <div class="simbolo">🟢</div>
+                            </div>
+                            <h5>ISK-0016-32-22-CE-PM-69</h5>
+                            <small>Vence: 14/07/2023 (7 días) </small>
                         </div>
-                        <b> I-0016-32-CE-MC-01</b>
-                        <small>Vence: 16/05/2023 (10 días) </small>
+                        <p>Ajuste de plano para plataforma metálica de acceso y operación de tanque de agua de incendio T-5810</p>
+                        <h6 class="ejecucion">Ejecución</h6>
                     </div>
-                    <p>Memoria de cálculo - Fundación Estructura metálica nuevo depósito</p>
-                </a>
-                <h6 class="sinComenzar">Sin comenzar</h6>
-                <a href="" title="Comenzar Tarea" class="botonIniciar"><i class="fa-solid fa-circle-play"></i></a>
+
+                    <div class="tarjeta-back">
+                        <UL>
+                            <li><b>N° INK:</b> ISK-0016-32-22-CE-PM-69-C0</li>
+                            <li><b>N° PECOM:</b> AH45-00-S-PL-0015-0</li>
+                            <li><b>N° SHELL:</b> BAN-1001-CX-2386-0028_0</li>
+                            <li><b>Descripción:</b> EPF BAN - STEEL STRUCTURES DRAWING - TANK LADDER EPF2-T-5810</li>
+                        </UL>
+                        <a href="pages/documento_3.html" title="Ver detalles del documento" class="botonDetalles">Ver detalles</a>
+                        <div class="botones">                           
+                            <a href="" title="Asignar HH"><i class="fa-solid fa-circle-plus"></i></a>
+                            <a href="" title="Entregar Tarea"><i class="fa-solid fa-circle-check"></i></a>
+                        </div>  
+                    </div>
+                </div>
             </div>
+            <div class="tarjeta tarjeta--sc">
+                <div class="tarjeta-flip">
+                    <div class="tarjeta-front">
+                        <div class="encabezado">
+                            <div class="icono">
+                                <!-- <img src="media/PecomShell.svg" alt="" > -->
+                                <div class="simbolo">🟢</div>
+                            </div>
+                            <h5>I-0040-01-23-CE-MC-28</h5>
+                            <small>Vence: 21/07/2023 (14 días) </small>
+                        </div>
+                        <p>Ajuste Memoria de cálculo de fundaciones para las calderas de agua (nave 89)</p>
+                        <h6 class="sinComenzar">Sin comenzar</h6>
+                    </div>
+
+                    <div class="tarjeta-back">
+                        <UL>
+                            <li><b>N° INK:</b> ISK-0040-01-23-CE-MC-28-AB</li>
+                            <li><b>N° CHEDIACK:</b> No existe</li>
+                            <li><b>N° ALLKEM:</b> No existe</li>
+                            <li><b>Descripción:</b> CALDERAS AGUA  5300-HX-009 - FUNDACION - MEMORIA DE CÁLCULO</li>
+                        </UL>
+                        <a href="pages/documento_4.html" title="Ver detalles del documento" class="botonDetalles">Ver detalles</a>
+                        <a href="" title="Comenzar Tarea" class="botonIniciar"><i class="fa-solid fa-circle-play"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            
         </div>              
     </main>
 
     <footer>
         <div>
             <div>
-                <small> Designed by <b> Matias Carrizo </b></small>
+                <small> Designed by <a href="https://studio86.tech/" target="_blank">Studio86</a>, todos los derechos reservados, 2023</small>
             </div>
         </div>
     </footer>

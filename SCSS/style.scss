@@ -30,6 +30,7 @@ body{
     
     background-image: url(../media/Abs\ \(8\).jpg);
     background-size: 100vw;
+
 }
 
 header{
@@ -52,7 +53,6 @@ nav{
 
 main{
     grid-area: main;
-    // background-color: $fondoMain;
     height: calc(100vh - $altoHeader - $altoFooter - 2 * $paddingHeader);
     overflow: scroll;    
 }
@@ -61,12 +61,14 @@ footer{
     display: flex;
     grid-area: footer;
     height: $altoFooter;
-    // background-color: $fondoFooter;
+    background-color: $fondoFooter;
 }
 
 @import 'header';
 @import 'nav';
 @import 'main';
 @import 'footer';
+
+
 
 

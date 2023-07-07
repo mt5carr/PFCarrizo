@@ -2,7 +2,6 @@
 
 header{
     padding: $paddingHeader;
-    display: flex;   
 
     @media (max-width: 860px) {
         //mobile
@@ -37,6 +36,7 @@ header{
     }
 
     @media (min-width: 860px) {
+        //desktop
         flex-direction: row;
         .header__logo{
             display: none;
@@ -44,13 +44,15 @@ header{
     }
 
     .header__barra{  
-        display: flex;      
+        display: flex;    
         justify-content: space-between;
+        width: 100%;
 
         .header__saludo{  
             display:flex;
-            align-items: baseline;        
-            width: 100%;
+            justify-content: left;
+            align-items: baseline;   
+            margin: 10px;
 
             h1{
                 display: inline;
@@ -62,10 +64,34 @@ header{
         }
 
         .header__usuario{
+            margin: 10px;
             ul{
                 list-style: none;
+                
             }
 
+        }
+
+        .usuario{
+            background-color: $enfacis;
+            &:hover{
+                background-color: $contraste;
+                color: $base-oscuro;
+            }
+        }
+
+        i{
+            margin-right: 15px;
+
+        }
+        
+        .dropdown-menu{
+            li{
+                color: red;
+                &:hover{
+                    color: $enfacis;
+                }
+            }
         }
         
     }
