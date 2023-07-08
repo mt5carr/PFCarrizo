@@ -3,9 +3,18 @@
 
 
 
-.avisador h2{
-    padding: 0%;
-    margin: 0%;
+.avisador{
+    h2{
+        padding: 0%;
+        margin: 0%;
+    }
+}
+
+.carousel{
+    @media (max-width: 860px) {
+        //mobile    
+        z-index: -1;
+    }
 }
 
 .carousel-item{

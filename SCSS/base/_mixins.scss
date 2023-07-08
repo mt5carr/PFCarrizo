@@ -7,7 +7,10 @@
     margin: 1em;
     position: relative;
     overflow: hidden;
-    z-index: -100;
+    @media (max-width: 860px) {
+        //mobile    
+        z-index: -1;
+    }
 }
 
 

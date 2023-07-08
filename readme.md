@@ -12,6 +12,4 @@
 + El trabajo final se encuentra hosteado en HOSTINGER y subido mediante el dominio "studio86.tech" 👉  https://www.studio86.tech/ . Se deberá seleccionar el logo "SiCI" indicado en la pantalla index de Studio86
 + La página se subió mediante enlace FTP con la ayuda del programa Filezilla.
 
-Detalle de la entrega 👉 https://abyssinian-burn-1f5.notion.site/Correcci-n-3er-pre-entrega-d41a9e64c0d14785ad4c120ff0d8ceed?pvs=4
-
 Espero que el proyecto cumpla con las expectativas. ¡Saludos! 😀
