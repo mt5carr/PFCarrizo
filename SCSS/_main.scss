@@ -450,7 +450,7 @@ main{
     background-repeat: no-repeat;
     background-size: 60em ;
     color: $contraste;    
-    width: auto;
+    width: 55em;
     height: 8em;
     padding: 2em;
     border-radius: 20px;
@@ -460,13 +460,14 @@ main{
     align-items: center;
 }
 
-.tabla{
+.tablaRepo{
+    @extend .tabla;
     .h1{
         font-size: 10em;
     }
 
     .buscador{
-        width: 85%;
+        width: 46em;
         margin: 1em;
     }
 
@@ -480,7 +481,10 @@ main{
             color: $enfacis;
         }
     }
-
+    td{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
     a{
         color: $base-oscuro;
         text-decoration: none;
@@ -496,7 +500,7 @@ main{
 /* Estilos vista de mensajería ---------------------------------------- */
 
 .msj{    
-    background-image: url('media/msjback.jpg');    
+    background-image: url('../media/msjback.jpg');    
     background-repeat: no-repeat;
     background-size: 60em ;    
 }
@@ -545,15 +549,15 @@ main{
     }
 }
 
-.historial{
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
+.historial{ 
+    overflow: scroll;
     height: 500px;
     border: 2px solid $base-claro;
     border-radius: 20px;
-    padding: 20px;
-    overflow-y: scroll;   
+    padding: 20px;  
+    img{
+        width: 100%;
+    }
 }
 
 .fila{

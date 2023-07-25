@@ -12,4 +12,12 @@
 + El trabajo final se encuentra hosteado en HOSTINGER y subido mediante el dominio "studio86.tech" 👉  https://www.studio86.tech/ . Se deberá seleccionar el logo "SiCI" indicado en la pantalla index de Studio86
 + La página se subió mediante enlace FTP con la ayuda del programa Filezilla.
 
+## Ajustes para re-entrega 🍀
+
++ Se ajustó la estructura HTML de las páginas
++ Se agregaron dos nuevas páginas HTML para controlar la correcta navegación.
++ Se incluyeron imágenes en la estructura
++ Se reestructuró el archivo principal de SCSS
++ Se agrgó un partial SCSS que aglomera las mediasqueries
+
 Espero que el proyecto cumpla con las expectativas. ¡Saludos! 😀
