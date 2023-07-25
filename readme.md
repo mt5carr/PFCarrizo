@@ -20,4 +20,11 @@
 + Se reestructuró el archivo principal de SCSS
 + Se agrgó un partial SCSS que aglomera las mediasqueries
 
+https://abyssinian-burn-1f5.notion.site/Comentarios-a-la-Correcci-n-del-Trabajo-Final-b64275ad6ab841808afc418f0f16d33b
+
+(https://www.loom.com/share/244c59314b8c4f2890454d2c133339fe?sid=6217a767-67ce-42d4-a425-dde3ede585a6)
+
+(https://www.loom.com/share/0f86c9833bfb46ccae4643b4d8a9004f?sid=dd2ac561-afed-4fa1-9d66-be16556320ec)
+
+
 Espero que el proyecto cumpla con las expectativas. ¡Saludos! 😀
