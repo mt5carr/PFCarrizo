@@ -471,3 +471,168 @@
     }
 }
 
+/* Estilos vista de repositorio ---------------------------------------- */
+
+.titulo{
+    display: flex;
+    background-color: $base-oscuro;
+    background-image: url('media/repoback.jpg');
+    background-repeat: no-repeat;
+    background-size: 60em ;
+    color: $contraste;    
+    width: 55em;
+    height: 3em;
+    padding: 2em;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+    margin: 1em;
+    justify-content: center;
+    align-items: center;
+
+    .buscador{
+        width: 90%;
+        margin: 1em;
+    }
+
+    .btn{
+        background-color: rgba(255, 0, 0, 0);
+        border: none;
+        color: $base-oscuro;
+        font-size: 1.5em;    
+    }
+
+    a{
+        color: $base-oscuro;
+        text-decoration: none;
+        font-weight: 600;   
+
+        &:hover{
+            color: $enfacis;
+        }
+    }
+}
+
+
+/* Estilos vista de mensajería ---------------------------------------- */
+
+.msj{    
+    background-image: url('media/msjback.jpg');    
+    background-repeat: no-repeat;
+    background-size: 60em ;    
+}
+
+.mensajeria{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+}
+
+.contactos{
+    background-color: $contraste;
+    width: 15em;
+    height: auto;
+    padding: 2em;
+    padding-top: 1em;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+    margin: 1em;    
+
+    select{
+        height: 500px;
+        width: 100%;
+        border: 2px solid $base-claro;
+  }
+}
+
+.mensajes{
+    display: flex;
+    flex-direction: column;
+    background-color: $contraste;
+    width: auto;
+    height: auto;
+    padding: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+    margin: 1em;
+
+    h3{
+        padding: 0;
+        margin-bottom: 5px;
+        color: $base-oscuro;
+    }
+}
+
+.historial{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 500px;
+    border: 2px solid $base-claro;
+    border-radius: 20px;
+    padding: 20px;
+    overflow-y: scroll;   
+}
+
+.fila{
+    display: flex;
+    flex-direction: row ;
+}
+
+.enviada{
+    justify-content: end;
+}
+
+.recibida{
+    justify-content: start;
+}
+
+.mensaje{
+    border: 2px solid $base-claro;
+    margin: 5px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;    
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+    font-size: 15px;
+}
+
+.recibido{
+    justify-content: end;
+    background-color: hsl(107, 100%, 95%);
+}
+
+.enviado{
+    justify-content: start;
+    background-color: hsl(226, 100%, 97%);
+}
+
+.nuevoMsj{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid $base-claro;
+    border-radius: 15px;
+    padding: 15px;
+    padding-right: 30px;
+    margin-top: 15px;
+}
+
+.escribir{
+    width: 470px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.nuevoMsj a{
+    font-size: 25px;
+    color: $base-oscuro;
+}
+
+.nuevoMsj a:hover{
+    color: $enfacis;    
+}
