@@ -1,7 +1,11 @@
 @import 'base/variables';
 @import 'base/mixins';
 
-
+main{
+    grid-area: main;
+    height: calc(100vh - $altoHeader - $altoFooter - 2 * $paddingHeader);
+    overflow: scroll;    
+}
 
 .avisador{
     h2{
@@ -10,12 +14,6 @@
     }
 }
 
-.carousel{
-    @media (max-width: 860px) {
-        //mobile    
-        z-index: -1;
-    }
-}
 
 .carousel-item{
     padding: 20px;
@@ -35,15 +33,6 @@
     flex-wrap: wrap;
     // background-color: $fondoTarjetero;
     overflow: hidden;
-    @media (min-width: 860px) {
-        justify-content: start;
-    }
-
-    @media (max-width: 860px) {
-        //mobile
-        justify-content: center;
-
-    }
 
     .tarjeta{
         // // position: relative;
@@ -339,14 +328,7 @@
 
         .a-izquierda{
             text-align: left;
-        }
-
-        @media (max-width: 860px) {
-            //mobile
-            .tabla__descripcion{
-                display: none;
-            }
-        }        
+        } 
     }
 }
 
@@ -355,10 +337,6 @@
 .informe{
     display: flex;
     flex-wrap: wrap;
-    @media (max-width: 860px) {
-        //mobile
-        justify-content: center;
-    }  
 
     .documento{
         @include tarjetaTip;
@@ -448,9 +426,7 @@
 
     .estado--sc{
         background-color: black;
-    }
-    
-
+    }  
 }
 
 .datosDoc { 
@@ -462,13 +438,7 @@
     border-radius: 20px;
     margin: 1em;
     float: left;
-    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);    
-
-    @media (max-width: 1150px) {
-        
-        overflow: scroll;
-
-    }
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2); 
 }
 
 /* Estilos vista de repositorio ---------------------------------------- */
@@ -476,21 +446,27 @@
 .titulo{
     display: flex;
     background-color: $base-oscuro;
-    background-image: url('media/repoback.jpg');
+    background-image: url('../media/repoback.jpg');
     background-repeat: no-repeat;
     background-size: 60em ;
     color: $contraste;    
-    width: 55em;
-    height: 3em;
+    width: auto;
+    height: 8em;
     padding: 2em;
     border-radius: 20px;
     box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
     margin: 1em;
     justify-content: center;
     align-items: center;
+}
+
+.tabla{
+    .h1{
+        font-size: 10em;
+    }
 
     .buscador{
-        width: 90%;
+        width: 85%;
         margin: 1em;
     }
 
@@ -498,7 +474,11 @@
         background-color: rgba(255, 0, 0, 0);
         border: none;
         color: $base-oscuro;
-        font-size: 1.5em;    
+        font-size: 1em;    
+            
+        &:hover{
+            color: $enfacis;
+        }
     }
 
     a{
@@ -617,20 +597,19 @@
     border: 2px solid $base-claro;
     border-radius: 15px;
     padding: 15px;
-    padding-right: 30px;
-    margin-top: 15px;
 }
 
 .escribir{
     width: 470px;
     height: 30px;
     border-radius: 10px;
-    padding: 5px;
+    padding-left: 10px;
 }
 
 .nuevoMsj a{
-    font-size: 25px;
+    font-size: 20px;
     color: $base-oscuro;
+    margin: 10px;
 }
 
 .nuevoMsj a:hover{

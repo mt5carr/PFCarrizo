@@ -12,18 +12,6 @@ body {
   background-image: url(../media/Abs\ \(8\).jpg);
   background-size: 100vw;
 }
-@media (min-width: 860px) {
-  body {
-    grid-template-columns: 250px auto;
-    grid-template-areas: "nav header" "nav main" "nav footer";
-  }
-}
-@media (max-width: 860px) {
-  body {
-    grid-template-columns: auto;
-    grid-template-areas: "header" "main" "footer";
-  }
-}
 
 header {
   display: flex;
@@ -32,29 +20,6 @@ header {
   height: 60px;
   background-color: rgba(255, 255, 255, 0.6352941176);
   backdrop-filter: blur(5px);
-}
-
-nav {
-  grid-area: nav;
-  height: 100vh;
-  background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.068));
-  backdrop-filter: blur(5px);
-}
-
-main {
-  grid-area: main;
-  height: calc(100vh - 60px - 30px - 0px);
-  overflow: scroll;
-}
-
-footer {
-  display: flex;
-  grid-area: footer;
-  height: 30px;
-  background-color: #ffffff;
-}
-
-header {
   padding: 0px;
 }
 @media (max-width: 860px) {
@@ -137,13 +102,12 @@ header .header__barra .dropdown-menu li:hover {
 }
 
 nav {
+  grid-area: nav;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.068));
+  backdrop-filter: blur(5px);
   display: flex;
   flex-direction: column;
-}
-@media (max-width: 860px) {
-  nav {
-    display: none;
-  }
 }
 nav .nav__logo {
   display: flex;
@@ -179,15 +143,15 @@ nav .nav__botones .navDesktop .nav__subitems {
   margin-left: 1.2em;
 }
 
+main {
+  grid-area: main;
+  height: calc(100vh - 60px - 30px - 0px);
+  overflow: scroll;
+}
+
 .avisador h2 {
   padding: 0%;
   margin: 0%;
-}
-
-@media (max-width: 860px) {
-  .carousel {
-    z-index: -1;
-  }
 }
 
 .carousel-item {
@@ -205,16 +169,6 @@ nav .nav__botones .navDesktop .nav__subitems {
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
-}
-@media (min-width: 860px) {
-  .tarjetero {
-    justify-content: start;
-  }
-}
-@media (max-width: 860px) {
-  .tarjetero {
-    justify-content: center;
-  }
 }
 .tarjetero .tarjeta {
   width: 300px;
@@ -475,21 +429,11 @@ nav .nav__botones .navDesktop .nav__subitems {
 .tarjetero .tabla .a-izquierda {
   text-align: left;
 }
-@media (max-width: 860px) {
-  .tarjetero .tabla .tabla__descripcion {
-    display: none;
-  }
-}
 
 /* Estilos Pantalla de Documentos*/
 .informe {
   display: flex;
   flex-wrap: wrap;
-}
-@media (max-width: 860px) {
-  .informe {
-    justify-content: center;
-  }
 }
 .informe .documento {
   width: 25em;
@@ -605,22 +549,17 @@ nav .nav__botones .navDesktop .nav__subitems {
   float: left;
   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
 }
-@media (max-width: 1150px) {
-  .datosDoc {
-    overflow: scroll;
-  }
-}
 
 /* Estilos vista de repositorio ---------------------------------------- */
 .titulo {
   display: flex;
   background-color: #2b2b2b;
-  background-image: url("media/repoback.jpg");
+  background-image: url("../media/repoback.jpg");
   background-repeat: no-repeat;
   background-size: 60em;
   color: #ffffff;
-  width: 55em;
-  height: 3em;
+  width: auto;
+  height: 8em;
   padding: 2em;
   border-radius: 20px;
   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
@@ -628,22 +567,29 @@ nav .nav__botones .navDesktop .nav__subitems {
   justify-content: center;
   align-items: center;
 }
-.titulo .buscador {
-  width: 90%;
+
+.tabla .h1 {
+  font-size: 10em;
+}
+.tabla .buscador {
+  width: 85%;
   margin: 1em;
 }
-.titulo .btn {
+.tabla .btn {
   background-color: rgba(255, 0, 0, 0);
   border: none;
   color: #2b2b2b;
-  font-size: 1.5em;
+  font-size: 1em;
 }
-.titulo a {
+.tabla .btn:hover {
+  color: #2D87F0;
+}
+.tabla a {
   color: #2b2b2b;
   text-decoration: none;
   font-weight: 600;
 }
-.titulo a:hover {
+.tabla a:hover {
   color: #2D87F0;
 }
 
@@ -748,20 +694,19 @@ nav .nav__botones .navDesktop .nav__subitems {
   border: 2px solid #e0e0e0;
   border-radius: 15px;
   padding: 15px;
-  padding-right: 30px;
-  margin-top: 15px;
 }
 
 .escribir {
   width: 470px;
   height: 30px;
   border-radius: 10px;
-  padding: 5px;
+  padding-left: 10px;
 }
 
 .nuevoMsj a {
-  font-size: 25px;
+  font-size: 20px;
   color: #2b2b2b;
+  margin: 10px;
 }
 
 .nuevoMsj a:hover {
@@ -769,7 +714,144 @@ nav .nav__botones .navDesktop .nav__subitems {
 }
 
 footer {
+  display: flex;
+  grid-area: footer;
+  height: 30px;
+  background-color: #ffffff;
   justify-content: center;
+}
+
+@media (min-width: 860px) {
+  body {
+    grid-template-columns: 250px auto;
+    grid-template-areas: "nav header" "nav main" "nav footer";
+  }
+}
+@media (max-width: 860px) {
+  body {
+    grid-template-columns: auto;
+    grid-template-areas: "header" "main" "footer";
+  }
+}
+
+@media (max-width: 860px) {
+  header {
+    flex-direction: column;
+    height: auto;
+  }
+  header .header__logo {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: #2b2b2b;
+    justify-content: space-between;
+  }
+  header .header__logo .header__img {
+    justify-content: center;
+    width: 120px;
+    margin: 10px;
+  }
+  header .header__logo .hamburguesa {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: #ffffff;
+  }
+  header .header__logo i {
+    margin-right: 10px;
+  }
+  header .header__usuario {
+    display: none;
+  }
+}
+@media (min-width: 860px) {
+  header {
+    flex-direction: row;
+  }
+  header .header__logo {
+    display: none;
+  }
+}
+header .header__barra {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+header .header__barra .header__saludo {
+  display: flex;
+  justify-content: left;
+  align-items: baseline;
+  margin: 10px;
+}
+header .header__barra .header__saludo h1 {
+  display: inline;
+  align-items: center;
+  margin: 0px;
+  margin-right: 10px;
+  font-size: 2em;
+}
+header .header__barra .header__usuario {
+  margin: 10px;
+}
+header .header__barra .header__usuario ul {
+  list-style: none;
+}
+header .header__barra .usuario {
+  background-color: #2D87F0;
+}
+header .header__barra .usuario:hover {
+  background-color: #ffffff;
+  color: #2b2b2b;
+}
+header .header__barra i {
+  margin-right: 15px;
+}
+header .header__barra .dropdown-menu li {
+  color: red;
+}
+header .header__barra .dropdown-menu li:hover {
+  color: #2D87F0;
+}
+
+@media (max-width: 860px) {
+  .carousel {
+    z-index: -1;
+  }
+}
+
+@media (min-width: 860px) {
+  .tarjetero {
+    justify-content: start;
+  }
+}
+@media (max-width: 860px) {
+  .tarjetero {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 860px) {
+  .tarjetero .tabla .tabla__descripcion {
+    display: none;
+  }
+}
+
+@media (max-width: 860px) {
+  .informe {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1150px) {
+  .datosDoc {
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 860px) {
+  nav {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

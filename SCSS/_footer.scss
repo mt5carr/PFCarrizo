@@ -1,6 +1,10 @@
 @import 'base/variables';
 
-footer{    
+footer{
+    display: flex;
+    grid-area: footer;
+    height: $altoFooter;
+    background-color: $fondoFooter;
     justify-content: center;
 }
 
